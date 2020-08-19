@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/discovery/discovery",
+    "pages/message/message",
+    "pages/userPage/userPage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF5151",
+    "navigationBarTitleText": "Feynman Study",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#FF5151",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "iconPath": "assets/images/tabBar_icon/homePage.png",
+        "selectedIconPath": "assets/images/tabBar_icon/homePageSelected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "iconPath": "assets/images/tabBar_icon/discovery.png",
+        "selectedIconPath": "assets/images/tabBar_icon/discoverySelected.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "assets/images/tabBar_icon/message.png",
+        "selectedIconPath": "assets/images/tabBar_icon/messageSelected.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/userPage/userPage",
+        "iconPath": "assets/images/tabBar_icon/user.png",
+        "selectedIconPath": "assets/images/tabBar_icon/userSelected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
