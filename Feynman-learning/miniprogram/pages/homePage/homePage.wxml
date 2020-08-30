@@ -1,0 +1,42 @@
+<view class="container">
+    <view class="nav-bar" ellipsis="false" animated="true" swipeable="true">
+        <van-tabs active="{{ active }}" bind:change="onChange">
+            <van-tab title="homePage">
+                <view class="page-body">
+                    <view class="page-section">
+                        <view class="page-section-title">通过HTML String渲染</view>
+                        <view class="page-content">
+                            <scroll-view scroll-y>{{}}</scroll-view>
+                            <button style="margin: 30rpx 0" type="primary" bindtap="renderHtml">
+                                渲染HTML
+                            </button>
+                            <block wx:if="{{renderedByHtml}}">
+                                <rich-text nodes="{{htmlSnip1}}"></rich-text>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="JavaScript">
+                <view class="page-body">
+                    <view class="page-section">
+                        <view class="page-section-title">通过HTML String渲染</view>
+                        <view class="page-content">
+                            <scroll-view scroll-y>{{}}</scroll-view>
+                            <button style="margin: 30rpx 0" type="primary" bindtap="renderHtml">
+                                渲染HTML
+                            </button>
+                            <block wx:if="{{renderedByHtml}}">
+                                <rich-text nodes="{{htmlSnip}}"></rich-text>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="Html/CSS">Html/CSS</van-tab>
+            <van-tab title="Vue.js">Vue.js</van-tab>
+            <van-tab title="React.js">React.js</van-tab>
+            <van-tab title="miniApp">miniApp</van-tab>
+        </van-tabs>
+    </view>
+</view>
